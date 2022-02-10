@@ -1,0 +1,157 @@
+{
+    "env": {
+        "commonjs": true,
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "mocha": true
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "ignorePatterns": [
+        "dist",
+        "node_modules",
+        "build",
+        "package.json"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "react-app",
+        "react-app/jest"
+    ],
+    "overrides": [
+		{
+			"files": [
+                "**/*.jsx"
+            ],
+			"parser": "@babel/eslint-parser",
+			"extends": [
+                "eslint:recommended",
+                "plugin:react/recommended",
+                "react-app",
+                "react-app/jest"
+            ],
+			"plugins": [
+                "react"
+            ],
+            "rules": {
+            }
+		}
+	],
+    "rules": {
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "camelcase": [
+            "error",
+            {
+                "properties": "never"
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "comma-spacing": [
+            "error"
+        ],
+        "comma-style": [
+            "error"
+        ],
+        "curly": [
+            "error"
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "eqeqeq": [
+            "error",
+            "always",
+            {
+                "null": "ignore"
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "no-trailing-spaces": [
+            "error"
+        ],
+        "no-var": [
+            "error"
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "consistent": true
+            }
+        ],
+        "prefer-const": [
+            "error"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "react/jsx-no-bind": [
+            "error",
+            {
+                "allowArrowFunctions": false
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-before-blocks": [
+            "error"
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ]
+    }
+}

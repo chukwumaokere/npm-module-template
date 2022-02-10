@@ -1,0 +1,58 @@
+{
+  "name": "@stream-captain/npm-module-template",
+  "version": "0.1.0",
+  "description": "A repo for the npm-module-template microfrontends",
+  "private": false,
+  "repository": "git://github.com/stream-captain/npm-module-template.git",
+  "bugs": {
+    "url": "https://github.com/stream-captain/npm-module-template/issues"
+  },
+  "homepage": "https://github.com/stream-captain/npm-module-template#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "captaintv",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "npm-module-template",
+    "template"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "PORT=8008 react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-react": "^7.16.7",
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-eslint": "^10.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
