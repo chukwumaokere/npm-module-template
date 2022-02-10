@@ -2,11 +2,12 @@
 
 ## How to use
 1. Clone this repo (Don't fork. So the repo can exist independently of this one)  
-2. Fill `src/lib/components` with your components and CSS  
-3. Fill `src/lib/libs` with your APIs and hooks  
-4. Fill `src/lib/views` with your rendered out views like the Moderation settings page or Overlay setting page.    
-5. Fill `/.env` with any environment variables you might need  
-6. You can use /App.js to render out your components and see what they'll look like as you build them.  
+2. Change all references of `npm-module-template` to `your-product-name`  
+3. Fill `src/lib/components` with your components and CSS  
+5. Fill `src/lib/libs` with your APIs and hooks  
+6. Fill `src/lib/views` with your rendered out views like the Moderation settings page or Overlay setting page.    
+6. Fill `/.env` with any environment variables you might need  
+7. You can use /App.js to render out your components and see what they'll look like as you build them.  
 
 In `src/lib/index.js` import what you want to have available, and export it like this:
 ### Exporting
