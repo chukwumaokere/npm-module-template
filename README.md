@@ -21,6 +21,13 @@ export { Overlay };
 export { Button };
 ```
 
+### Publishing 
+1. Update version number in `package.json`   
+2. Run `npm run build` To build the latest one   
+3. Commit everything (including `dist`)  
+4. Make sure you're logged in using `npm login` and your github personal access token (with read and write permissions as per [This guide](https://streamcaptain.atlassian.net/wiki/spaces/CT/pages/1734475809/Node+Modules)) as your password    
+5. Then run `npm publish` to publish   
+
 ### Consuming
 So you can do this on any React platform: 
 ```js
@@ -31,9 +38,3 @@ import { Button } from '@stream-captain/your-product-name';
 <Button props={props} />
 <RaidersOverlay props={props} />
 ```
-### Publishing 
-1. Update version number in `package.json`   
-2. Run `npm run build` To build the latest one   
-3. Commit everything (including `dist`)  
-4. Make sure you're logged in using `npm login` and your github personal access token (with read and write permissions as per [This guide](https://streamcaptain.atlassian.net/wiki/spaces/CT/pages/1734475809/Node+Modules)) as your password    
-5. Then run `npm publish` to publish   
