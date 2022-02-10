@@ -29,7 +29,10 @@ export { Button };
 5. Then run `npm publish` to publish   
 
 ### Consuming
+1. Follow [This guide](https://streamcaptain.atlassian.net/wiki/spaces/CT/pages/1769635853/Consuming+CTV+Node+Modules) to set up your project to any private node module repo.
+
 So you can do this on any React platform: 
+`npm install @stream-captain/your-product-name@latest`  
 ```js
 import { Overlay as RaidersOverlay } from '@stream-captain/your-product-name'; //your product name can be like @stream-captain/raiders-tools
 import { Button } from '@stream-captain/your-product-name';
