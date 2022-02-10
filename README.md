@@ -23,8 +23,8 @@ export { Button };
 ### Consuming
 So you can do this on any React platform: 
 ```js
-import { Overlay as RaidersOverlay } from '@stream-captain/raiders-tools';
-import { Button } from '@stream-captain/raiders-tools';
+import { Overlay as RaidersOverlay } from '@stream-captain/your-product-name'; //your product name can be like @stream-captain/raiders-tools
+import { Button } from '@stream-captain/your-product-name';
 
 
 <Button props={props} />
