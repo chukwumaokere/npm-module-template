@@ -34,6 +34,6 @@ import { Button } from '@stream-captain/your-product-name';
 ### Publishing 
 1. Update version number in `package.json`   
 2. Run `npm run build` To build the latest one   
-Commit everything (including `dist`)
-Make sure you're logged in using `npm login` and your github personal access token (with read and write permissions as per [This guide](https://streamcaptain.atlassian.net/wiki/spaces/CT/pages/1734475809/Node+Modules)) as your password    
-Then run `npm publish` to publish   
+3. Commit everything (including `dist`)  
+4. Make sure you're logged in using `npm login` and your github personal access token (with read and write permissions as per [This guide](https://streamcaptain.atlassian.net/wiki/spaces/CT/pages/1734475809/Node+Modules)) as your password    
+5. Then run `npm publish` to publish   
